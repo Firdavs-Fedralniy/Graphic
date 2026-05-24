@@ -1,0 +1,54 @@
+.switch__theme {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    background-color: rgb(35, 185, 231);
+    border-radius: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+    padding: 0 2px;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.switch__theme__dark {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    background-color: rgb(57, 57, 57); /* ← тёмный фон для dark-режима */
+    border-radius: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+    padding: 0 2px;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.switch__thumb {
+    width: 26px;
+    height: 26px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    flex-shrink: 0;
+}
+
+.switch__thumb.dark {
+    transform: translateX(38px); 
+}
+
+.bi-sun-fill {
+    font-size: 14px;
+    color: rgb(255, 200, 0);
+}
+
+.bi-moon-fill {
+    font-size: 14px;
+    color: rgb(57, 57, 57);
+}

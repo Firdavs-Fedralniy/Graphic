@@ -1,0 +1,143 @@
+.header{
+    padding-top: 30px;
+    transition: all 0.3s;
+
+}
+.header__black{
+    background-color: rgb(10, 10, 10);
+}
+.header__line{
+    margin-top: 25px;
+    border-bottom: 1px solid rgb(97, 210, 245);
+}
+
+.header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__img{
+    width: 50px;
+    height: 50px;
+}
+
+.header__menu{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.header__link{
+    color: rgb(35, 185, 231);
+    transition: all 0.1s;
+}
+.header__link__black{
+    color: rgb(255, 255, 255);
+    transition: all 0.1s;
+}
+.header__link__black:hover{
+    transform: translateY(-3px);
+    color: white;
+}
+
+.header__link:hover{
+   
+    color: black;
+}
+
+.header__list{
+    transition: all 0.3s;
+}
+
+.header__list:hover{
+     transform: translateY(-3px);
+}
+
+
+.header__UI{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__login{
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    border: 2px solid rgb(35, 185, 231);
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header__login:hover{   
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+     background-color: rgb(35, 185, 231);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.header__signin{
+     padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+     background-color: rgb(35, 185, 231);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header__signin:hover{
+      transform: translateY(-3px);
+    box-shadow: 0 0  20px rgb(0, 0, 0);
+     background-color: white;
+    border: 2px solid rgb(35, 185, 231);
+    color: black;
+}
+
+.header__login__black{
+    border: none;
+}
+.header__login__black:hover{
+    background: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid rgb(248, 248, 248);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.header__signin__black{
+    background: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid rgb(248, 248, 248);
+}
+
+.header__signin__black:hover{
+     background-color: white;
+     box-shadow: 0 0  20px rgb(255, 255, 255);
+    color: black;
+border: none;
+}
+
+.header__line__black{
+    border-bottom: 2px solid #bebebe;
+}
+.bi-person-circle{
+    font-size: 30px;
+    cursor: pointer;
+}
+.bi-bell-fill{
+    font-size: 30px;
+    cursor: pointer;
+}
+.bi-black{
+    color: white;
+}
+
+.bi-send-fill{
+    color: aqua;
+    font-size: 30px;
+    cursor: pointer;
+}

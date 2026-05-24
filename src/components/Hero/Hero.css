@@ -1,0 +1,128 @@
+.hero {
+  height: 89vh;    
+  position: relative;
+  
+}
+
+.hero__info{
+    text-align: center;
+    color: rgb(35, 185, 231);
+    font-size: 50px;
+    line-height: 120px;
+    padding-top: 222px;
+}
+
+
+.hero__title{
+        font-family: "Inter";
+    font-weight: 500;
+       background: linear-gradient(
+        270deg,
+        #101146,
+        #19a6c9,
+        #19a6c9,
+        #101146
+    );
+    background-size: 500% 500%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:  titleGradient 5s ease-in-out infinite;
+}
+.hero__text{
+    color: rgb(182, 182, 182);
+    font-size: 23px;
+    padding-top: 50px;
+    line-height: 40px;
+    letter-spacing: 10px;
+}
+.hero__title__black{
+  font-family: "Inter";
+    font-weight: 500;
+         background: linear-gradient(
+        270deg,
+        #000000,
+        #bebebe,
+        #bebebe,
+        #000000
+    );
+    background-size: 500% 500%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation:  titleGradient 5s ease-in-out infinite;
+}
+
+.hero__button__wrapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.hero__login{
+    padding: 20px 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    border: 2px solid rgb(35, 185, 231);
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hero__login:hover{   
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+     background-color: rgb(35, 185, 231);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.hero__signin{
+     padding: 20px 50px;
+    border-radius: 50px;
+    border: none;
+     background-color: rgb(35, 185, 231);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hero__signin:hover{
+      transform: translateY(-3px);
+    box-shadow: 0 0  20px rgb(0, 0, 0);
+     background-color: white;
+    border: 2px solid rgb(35, 185, 231);
+    color: black;
+}
+
+.hero__login__black{
+    border: none;
+}
+.hero__login__black:hover{
+    background: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid rgb(248, 248, 248);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.hero__signin__black{
+    background: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid rgb(248, 248, 248);
+}
+
+.hero__signin__black:hover{
+     background-color: white;
+     box-shadow: 0 0  20px rgb(255, 255, 255);
+    color: black;
+border: none;
+}
+
+
+
+@keyframes titleGradient {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

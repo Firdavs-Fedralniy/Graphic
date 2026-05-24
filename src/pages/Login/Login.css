@@ -1,0 +1,221 @@
+.login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.login__switch {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.login__box {
+  background: white;
+  border-radius: 24px;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.login__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.login__logo__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(35, 185, 231);
+}
+
+.login__logo__name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+}
+
+.login__title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 6px;
+}
+
+.login__subtitle {
+  font-size: 14px;
+  color: #aaa;
+  margin: 0 0 28px;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.login__label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+}
+
+.login__email,
+.login__password {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1.5px solid #e0e0e0;
+  font-size: 14px;
+  color: #111;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+  background: #fafafa;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login__email::placeholder,
+.login__password::placeholder {
+  color: #aaa;
+}
+
+.login__email:focus,
+.login__password:focus {
+  border-color: rgb(35, 185, 231);
+  background: white;
+}
+
+.login__form button[type="submit"] {
+  padding: 14px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(35, 185, 231);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.login__form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(35, 185, 231, 0.4);
+}
+
+.login__check {
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+  margin: 22px 0 0;
+}
+
+.login__check span {
+  color: rgb(35, 185, 231);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login__check span:hover {
+  text-decoration: underline;
+}
+
+/* ── dark theme ── */
+.login--dark {
+  background-color: rgb(20, 20, 20);
+}
+
+.login--dark .login__box {
+  background: rgb(10, 10, 10);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.login--dark .login__logo__dot {
+  background-color: #fff;
+}
+
+.login--dark .login__logo__name {
+  color: #fff;
+}
+
+.login--dark .login__title {
+  color: #fff;
+}
+
+.login--dark .login__subtitle {
+  color: #555;
+}
+
+.login--dark .login__label {
+  color: #888;
+}
+
+.login--dark .login__email,
+.login--dark .login__password {
+  background: #111;
+  border-color: #2a2a2a;
+  color: #fff;
+}
+
+.login--dark .login__email::placeholder,
+.login--dark .login__password::placeholder {
+  color: #444;
+}
+
+.login--dark .login__email:focus,
+.login--dark .login__password:focus {
+  border-color: #fff;
+  background: #1a1a1a;
+}
+
+.login--dark .login__form button[type="submit"] {
+  background: #fff;
+  color: #000;
+}
+
+.login--dark .login__form button[type="submit"]:hover {
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+.login--dark .login__check {
+  color: #555;
+}
+
+.login--dark .login__check span {
+  color: #fff;
+}
+
+.login__input--error {
+  border-color: #e24b4a !important;
+  animation: shake 0.4s ease;
+}
+
+.login__error {
+  font-size: 13px;
+  color: #e24b4a;
+  text-align: center;
+  margin: -4px 0 0;
+}
+
+@keyframes shake {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(-8px); }
+  40%  { transform: translateX(8px); }
+  60%  { transform: translateX(-5px); }
+  80%  { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}

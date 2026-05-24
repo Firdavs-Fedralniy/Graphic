@@ -1,0 +1,279 @@
+.mg {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s;
+}
+
+.mg__container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.mg__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.mg__title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+}
+
+.mg__btn__create {
+  padding: 10px 24px;
+  border-radius: 50px;
+  border: none;
+  background-color: #111;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.mg__btn__create:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mg__loading {
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.mg__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mg__item {
+  display: flex;
+  gap: 20px;
+}
+
+.mg__timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.mg__circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #111;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mg__line {
+  width: 2px;
+  flex: 1;
+  min-height: 24px;
+  background-color: #e0e0e0;
+  margin: 6px 0;
+  transition: background-color 0.3s;
+}
+
+.mg__card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  flex: 1;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.mg__card__date__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.mg__card__date__label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+  transition: color 0.3s;
+}
+
+.mg__card__count {
+  font-size: 12px;
+  color: #555;
+  font-weight: 500;
+  background: #f0f0f0;
+  padding: 4px 10px;
+  border-radius: 50px;
+}
+
+.mg__tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mg__task {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.mg__task__time {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  min-width: 44px;
+  padding-top: 2px;
+  flex-shrink: 0;
+}
+
+.mg__task__body {
+  flex: 1;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.mg__task:last-child .mg__task__body {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.mg__task__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 4px;
+  transition: color 0.3s;
+}
+
+.mg__task__text {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+/* dark */
+.mg--dark {
+  background-color: rgb(20, 20, 20);
+}
+
+.mg--dark .mg__title {
+  color: #fff;
+}
+
+.mg--dark .mg__circle {
+  background-color: #fff;
+  color: #000;
+}
+
+.mg--dark .mg__btn__create {
+  background: #fff;
+  color: #000;
+}
+
+.mg--dark .mg__btn__create:hover {
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+}
+
+.mg--dark .mg__card {
+  background: rgb(10, 10, 10);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.mg--dark .mg__card__date__header {
+  border-bottom-color: #1e1e1e;
+}
+
+.mg--dark .mg__card__date__label {
+  color: #fff;
+}
+
+.mg--dark .mg__card__count {
+  background: #1e1e1e;
+  color: #888;
+}
+
+.mg--dark .mg__task__time {
+  color: #aaa;
+}
+
+.mg--dark .mg__task__title {
+  color: #fff;
+}
+
+.mg--dark .mg__task__text {
+  color: #555;
+}
+
+.mg--dark .mg__task__body {
+  border-bottom-color: #1a1a1a;
+}
+
+.mg--dark .mg__line {
+  background-color: #2a2a2a;
+}
+
+.mg__btn__create {
+  background-color: rgb(35, 185, 231);
+  color: white;
+}
+
+.mg__btn__create:hover {
+  box-shadow: 0 6px 20px rgba(35, 185, 231, 0.4);
+}
+
+.mg__circle {
+  background-color: rgb(35, 185, 231);
+  color: white;
+}
+
+.mg__card__count {
+  color: rgb(35, 185, 231);
+  background: rgba(35, 185, 231, 0.08);
+}
+
+.mg__task__time {
+  color: rgb(35, 185, 231);
+}
+
+.mg__task__delete {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.mg__task__delete:hover {
+  color: #e24b4a;
+  background: rgba(226, 75, 74, 0.08);
+}
+
+.mg--dark .mg__task__delete {
+  color: #444;
+}
+
+.mg--dark .mg__task__delete:hover {
+  color: #e24b4a;
+}

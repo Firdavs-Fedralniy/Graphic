@@ -1,0 +1,134 @@
+.notif {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s;
+}
+
+.notif__container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.notif__title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 32px;
+  transition: color 0.3s;
+}
+
+.notif__empty {
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.notif__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.notif__card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px 24px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.notif__card__info {
+  flex: 1;
+}
+
+.notif__card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  gap: 12px;
+}
+
+.notif__card__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+  margin: 0;
+  transition: color 0.3s;
+}
+
+.notif__card__time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.notif__card__time span {
+  font-size: 12px;
+  color: #888;
+  font-weight: 500;
+}
+
+.notif__card__text {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.notif__btn__done {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: #111;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+
+.notif__btn__done:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* dark */
+.notif--dark {
+  background-color: rgb(20, 20, 20);
+}
+
+.notif--dark .notif__title {
+  color: #fff;
+}
+
+.notif--dark .notif__card {
+  background: rgb(10, 10, 10);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.notif--dark .notif__card__title {
+  color: #fff;
+}
+
+.notif--dark .notif__card__text {
+  color: #555;
+}
+
+.notif--dark .notif__btn__done {
+  background: #fff;
+  color: #000;
+}
+
+.notif--dark .notif__btn__done:hover {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}

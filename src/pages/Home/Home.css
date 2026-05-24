@@ -1,0 +1,72 @@
+.create{
+    padding-top: 100px;
+    height: 89vh;
+}
+
+.create__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.create__info{
+    width: 600px;
+    
+}
+.create__title{
+    font-size: 60px;
+    color: aqua;
+    padding-bottom: 30px;
+}
+
+.create__text{
+    font-size: 19px;
+    padding-bottom: 40px;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+
+.create__button{
+    padding: 20px 50px;
+    border-radius: 50px;
+    border: none;
+       background-color: rgb(35, 185, 231);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+.create__button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px black;
+}
+
+
+
+.create__img{
+    width: 500px;
+    height: 500px;
+}
+
+
+.create__black{
+    background-color: rgb(10, 10, 10);
+}
+
+.create__black .create__title{
+    color: rgb(212, 212, 212);
+}
+
+.create__black .create__text{
+    color: white;
+}
+
+.create__black .create__button{
+    background-color: white;
+    color: black;
+}
+
+.create__black .create__button:hover{
+     background: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid rgb(248, 248, 248);
+}
