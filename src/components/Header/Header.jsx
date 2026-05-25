@@ -9,6 +9,8 @@ function Header() {
     const navigate = useNavigate()
     const theme = useSelector((state) => state.themeSlice.theme)
     const token = useSelector((state) => state.auth.token)
+    const notifications = useSelector((state) => state.notifications.items)
+
 
   return (
     <header className={`header ${theme? "header__black" : ""}`}>
@@ -25,7 +27,12 @@ function Header() {
                     <Switch/>
                     {token ? <>
                     <i className={`bi bi-person-circle ${theme ? "bi-black" : ""}`}></i>
-                    <i className={`bi bi-bell-fill ${theme ? "bi-black" : ""}`} onClick={()=> navigate("/notifications")}></i>
+                    <div className="header__bell" onClick={() => navigate("/notifications")}>
+  <i className={`bi bi-bell-fill ${theme ? "bi-black" : ""}`}></i>
+  {notifications.length >= 1 && (
+    <span className="header__notif__badge">{notifications.length}</span>
+  )}
+</div>
                    <a href="https://t.me/graphicday123_bot"> <i class="bi bi-send-fill" ></i></a>
                     </>: <>
                     <button className={`header__login ${theme? "header__login__black" : ""}`} onClick={()=> navigate("/login")}>Log In</button>
