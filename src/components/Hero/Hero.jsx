@@ -44,7 +44,7 @@ useEffect(() => {
             <h2 className={theme ? "hero__title__black" : "hero__title"}>Make your day more <br /> orderly</h2>
             <p className="hero__text">Login to get more content</p>
            <div className="hero__button__wrapp">
-             <button className={`hero__login ${theme ? "hero__login__black" : ""}`} onClick={(navigate("/login"))}>Log In</button>
+             <button className={`hero__login ${theme ? "hero__login__black" : ""}`} onClick={(()=>navigate("/login"))}>Log In</button>
             <button className={`hero__signin ${theme ? "hero__signin__black" : ""}`} onClick={()=> navigate("/signin")}>Sign In</button>
            </div>
           </div>
